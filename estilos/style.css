@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background: url(../imagens/background.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-header {
+    background: #152526;
+    padding: 60px 40px;
+}
+
+.pic {
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(115deg, #DCF2F2, #e66767, #DCF2F2);
+    margin: auto;
+    border-radius: 50px;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient {
+    25%{
+        background-position: left bottom;
+    }
+    75%{
+        background-position: right bottom;
+    }
+    50%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name{
+    color: #A8BBBF;
+    font-size: 28px;
+    font-weight: 600px;
+    margin: 10px 0;
+}
+
+.desc{
+    font-size: 18px;
+    color: #e66767;
+}
+
+.sm{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sm a{
+    color: #A8BBBF;
+    width: 56px;
+    font-size: 22px;
+    transition: .3s linear;
+}
+
+.sm a:hover{
+    color: #e66767;
+}
+
+.contact-btn{
+    display: inline-block;
+    padding: 12px 50px;
+    color: #e66767;
+    border: 2px solid #e66767;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: .3s linear;
+}
+
+.contact-btn:hover{
+    background: #e66767;
+    color: #DCF2F2;
+}
+
+.card-footer{
+    background: #DCF2F2;
+    padding: 60px 10px;
+}
+
+.numbers{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item{
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #152526;
+}
+
+.item span{
+    display: block;
+    color: #475951;
+    font-size: 30px;
+}
+
+.border{
+    width: 1px;
+    height: 30px;
+    background: #bbb;
+}
