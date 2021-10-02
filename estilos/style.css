@@ -127,6 +127,10 @@ body {
     font-size: 30px;
 }
 
+.item:hover {
+    color: #e66767;
+}
+
 .border{
     width: 1px;
     height: 30px;
